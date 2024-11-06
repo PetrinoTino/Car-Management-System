@@ -6,6 +6,7 @@ public class Vehicle {
     private int year;
     private double price;
 
+
     public Vehicle(String make, String model, int year, double price) {
         this.make = make;
         this.model = model;
@@ -31,6 +32,9 @@ public class Vehicle {
 
     @Override
     public String toString() {
-        return "Make: " + make + ", Model: " + model + ", Year: " + year + ", Price: $" + price;
+        return "Make: " + make
+                + ", Model: " + model + ", " +
+                "Year: " + year + "," +
+                " Price: $" + price;
     }
 }
